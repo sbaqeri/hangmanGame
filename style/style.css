@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #292643;
+  color: #bbaab8;
+}
+/* container */
+.container {
+  max-width: 1000px;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Nanum Gothic", sans-serif;
+  height: 100vh;
+}
+/*hangman title  */
+.hangman-title {
+  color: #bbaab8;
+  margin-bottom: 0.5rem;
+}
+.hangman-title h1 {
+  margin-bottom: 0.5rem;
+}
+.hangman-title #mistakes {
+  color: #e99e75;
+}
+/* hangman-guesses */
+.hangman-guesses p {
+  margin: 0.5rem 0;
+}
+/* btn */
+.btn {
+  outline: none;
+  padding: 0.5rem;
+  border: 1px solid #bbaab8;
+  border-radius: 3px;
+  background-color: #d5aaf098;
+  color: white;
+  transition: 0.2s;
+  margin: 0.2rem;
+}
+.btn:hover {
+  background-color: #d5aaf04d;
+}

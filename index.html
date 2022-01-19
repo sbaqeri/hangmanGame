@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hangman | Sanaz Baqeri</title>
+  </head>
+  <body>
+    <!-- container -->
+    <div class="container">
+      <!-- hangman title -->
+      <div class="hangman-title">
+        <h1>Hangman</h1>
+        <h2>
+          Wrong Guesses: <span id="mistakes">0 </span>of
+          <span id="maxWrongs">6</span>
+        </h2>
+      </div>
+      <!-- hangman pic -->
+      <div class="hangman-pic">
+        <img src="images/0.jpg" alt="hangman" id="hangmanPic" />
+      </div>
+      <!-- hangman guesses -->
+      <div class="hangman-guesses">
+        <p>Guess the Programming Language:</p>
+        <p id="wordSpotlight">The word to be guessed goes here</p>
+        <div id="keyboard"></div>
+        <button class="btn" onclick="reset()">reset</button>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
